@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>The Book Club — Curated Books, Trusted Sellers</title>
+  <meta name="description" content="Discover timeless books from a trusted seller. Browse our curated catalog and message us on Instagram to place your order." />
+  <meta name="keywords" content="books, bookstore, curated books, classic literature, buy books, book catalog" />
+  <meta name="author" content="The Book Club" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Book Club — Curated Books, Trusted Sellers" />
+  <meta property="og:description" content="Browse our handpicked catalog and order your favorite books through Instagram." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (simple inline SVG as data-URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════
+       NAVIGATION
+       ════════════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="#" class="nav__brand" aria-label="The Book Club home">The Book <span>Club</span></a>
+
+      <button class="nav__toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__links">
+        <li><a href="#catalog">Catalog</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://www.instagram.com/thebookclub._store?igsh=MWpwYnhjMDl6d2FiaQ==" target="_blank" rel="noopener noreferrer" class="nav__cta">
+            <!-- Instagram icon (simple) -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+            Message Us
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════════
+       HERO
+       ════════════════════════════════════════ -->
+  <header class="hero" id="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">Est. for book lovers</p>
+
+      <h1 class="hero__title">
+        The Book Club
+        <span>Where every page tells a story</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        A curated collection of timeless books from a seller you can trust.
+        Browse, discover, and order with a simple message.
+      </p>
+
+      <a href="https://www.instagram.com/thebookclub._store?igsh=MWpwYnhjMDl6d2FiaQ==" target="_blank" rel="noopener noreferrer" class="hero__cta">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+        Message on Instagram
+      </a>
+
+      <!-- Animated positive words -->
+      <div class="hero__words" aria-hidden="true">
+        <span class="hero__word">Discover</span>
+        <span class="hero__word-dot"></span>
+        <span class="hero__word">Trust</span>
+        <span class="hero__word-dot"></span>
+        <span class="hero__word">Classic</span>
+        <span class="hero__word-dot"></span>
+        <span class="hero__word">Elegant</span>
+        <span class="hero__word-dot"></span>
+        <span class="hero__word">Curated</span>
+        <span class="hero__word-dot"></span>
+        <span class="hero__word">Timeless</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════
+       SEARCH
+       ════════════════════════════════════════ -->
+  <section class="search-section" id="catalog">
+    <div class="container">
+      <p class="section-label reveal">Our Collection</p>
+      <h2 class="section-heading reveal">Find Your Next Read</h2>
+      <p class="section-desc reveal">Search by book title or author name. Your next favourite story is just a search away.</p>
+
+      <div class="search-bar reveal">
+        <svg class="search-bar__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input
+          type="text"
+          id="searchInput"
+          class="search-bar__input"
+          placeholder="Search by title or author…"
+          autocomplete="off"
+          aria-label="Search books by title or author"
+        />
+      </div>
+
+      <p class="search-bar__count reveal" id="searchCount"></p>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       BOOK LISTING
+       ════════════════════════════════════════ -->
+  <section class="books-section">
+    <div class="container">
+      <div class="books-grid" id="booksGrid">
+        <!-- Books rendered by script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       TRUST / ABOUT
+       ════════════════════════════════════════ -->
+  <section class="trust-section" id="about">
+    <div class="container">
+      <p class="section-label reveal">Why Trust Us</p>
+      <h2 class="section-heading reveal">Built on Honesty &amp; Care</h2>
+      <hr class="gold-rule reveal" />
+      <p class="section-desc reveal">We believe book buying should be personal, transparent, and effortless. Here's what sets us apart.</p>
+
+      <div class="trust__grid">
+        <div class="trust__card reveal">
+          <span class="trust__card-icon">📖</span>
+          <h3 class="trust__card-title">Handpicked Catalog</h3>
+          <p class="trust__card-text">Every title in our collection is carefully chosen — classics, modern essentials, and hidden gems, all in one place.</p>
+        </div>
+
+        <div class="trust__card reveal">
+          <span class="trust__card-icon">🤝</span>
+          <h3 class="trust__card-title">Genuine &amp; Personal</h3>
+          <p class="trust__card-text">We're real people who love books. Every order is handled personally through Instagram DM — no bots, no confusion.</p>
+        </div>
+
+        <div class="trust__card reveal">
+          <span class="trust__card-icon">✨</span>
+          <h3 class="trust__card-title">Simple &amp; Clear</h3>
+          <p class="trust__card-text">Find a book you love, message us, and we'll take care of the rest. No complicated checkouts, no hidden fees.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       CONTACT
+       ════════════════════════════════════════ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <p class="section-label reveal">Get in Touch</p>
+      <h2 class="section-heading reveal">Ready to Order?</h2>
+      <p class="section-desc reveal">Found a book you love? Send us a message on Instagram and we'll get back to you promptly.</p>
+
+      <div class="contact__card reveal">
+        <h3 class="contact__heading">The Book Club</h3>
+        <p class="contact__subtext">Your next great read is one message away</p>
+
+        <!-- Instagram -->
+        <div class="contact__row">
+          <div class="contact__row-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <div>
+            <div class="contact__row-label">Instagram</div>
+            <div class="contact__row-value">
+              <a href="https://www.instagram.com/thebookclub._store?igsh=MWpwYnhjMDl6d2FiaQ==" target="_blank" rel="noopener noreferrer">@thebookclub._store</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="contact__row">
+          <div class="contact__row-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contact__row-label">Email</div>
+            <div class="contact__row-value">
+              <a href="mailto:singularityr1@gmail.com">singularityr1@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main CTA -->
+        <a href="https://www.instagram.com/thebookclub._store?igsh=MWpwYnhjMDl6d2FiaQ==" target="_blank" rel="noopener noreferrer" class="contact__main-cta">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+          Message Us on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__brand">The Book <span>Club</span></div>
+    <p>&copy; 2025 The Book Club. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts — books.js must load before script.js -->
+  <script src="books.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
