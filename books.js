@@ -14,8 +14,6 @@
  */
 
 const books = [
-  { title: "11/22/63", author: "Stephen King" },
-  { title: "1984", author: "George Orwell" },
   { title: "LIVE WHILE YOU'RE ALIVE", author: "SHIV KHERA" },
   { title: "A Thousand Splendid Suns", author: "KHALED HOSSEINI" },
   { title: "Harry Potter and the Philosopher's Stone (Harry Potter 1)", author: "J K ROWLING" },
